@@ -29,10 +29,6 @@ Gustavo Mercier
           - Reduces the contribution from rare N-grams.
           - Done while mantaining accuracy.
 
-<!-- Slidy source hosted in [github cvCalculator_slides](https://github.com/gamercier/cvCalculator_slides/tree/gh-pages) -->
-
-<!-- Shiny app source hosted in [github cvCalculator](https://github.com/gamercier/cvCalculator) -->
-
 ## The App
 
 * The prototype is simple.
@@ -44,20 +40,15 @@ Gustavo Mercier
 * The input is filtered to match the one applied to the source corpus.
 * Output is unchanged until better guesses are found.
      + The default guesses are the 3 most frequent unigrams.
+* [Source](https://github.com/gamercier/nextWordSlides) at github.
 
-## User experience
-
-* The experience with the prototype is less than adequate, but can be improved.
-* Tests show that at least one of the guesses will be correct 20-30% of the time.
-* Performance is best for web text, but worse for non-web based text.
-* The source corpora and its processing can still be refined to improve accuracy.
-
-## Significance
+## Significance and User Experience
 
 * The strength of this App is its small size
      + Database 3.6Mb.
-* It is also fast with real time results.
+* _It is also fast with real time results which helps user experience_
      + 1.3msec per guess.
 * Extrinsic test sets provide a more realistic measure of performance
      + Avoid optimizing perplexity.
      + Suitable for non-strictly probabilitic model, like stupid backoff.
+     + _Accuracy for top 3 guesses ~25% which is suboptimal for users_

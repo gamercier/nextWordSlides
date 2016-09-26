@@ -89,7 +89,7 @@
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
       <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
       <p data-config-presenter><!-- populated from slide_config.json --></p>
-            <p style="margin-top: 6px; margin-left: -2px;">22 September, 2016</p>
+            <p style="margin-top: 6px; margin-left: -2px;">26 September, 2016</p>
           </hgroup>
   </slide>
 
@@ -146,10 +146,6 @@
 </ul></li>
 </ul>
 
-<!-- Slidy source hosted in [github cvCalculator_slides](https://github.com/gamercier/cvCalculator_slides/tree/gh-pages) -->
-
-<!-- Shiny app source hosted in [github cvCalculator](https://github.com/gamercier/cvCalculator) -->
-
 </article></slide><slide class=''><hgroup><h2>The App</h2></hgroup><article  id="the-app">
 
 <ul>
@@ -171,18 +167,10 @@
 <ul>
 <li>The default guesses are the 3 most frequent unigrams.</li>
 </ul></li>
+<li><a href='https://github.com/gamercier/nextWordSlides' title=''>Source</a> at github.</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>User experience</h2></hgroup><article  id="user-experience">
-
-<ul>
-<li>The experience with the prototype is less than adequate, but can be improved.</li>
-<li>Tests show that at least one of the guesses will be correct 20-30% of the time.</li>
-<li>Performance is best for web text, but worse for non-web based text.</li>
-<li>The source corpora and its processing can still be refined to improve accuracy.</li>
-</ul>
-
-</article></slide><slide class=''><hgroup><h2>Significance</h2></hgroup><article  id="significance">
+</article></slide><slide class=''><hgroup><h2>Significance and User Experience</h2></hgroup><article  id="significance-and-user-experience">
 
 <ul>
 <li>The strength of this App is its small size
@@ -190,7 +178,7 @@
 <ul>
 <li>Database 3.6Mb.</li>
 </ul></li>
-<li>It is also fast with real time results.
+<li><em>It is also fast with real time results which helps user experience</em>
 
 <ul>
 <li>1.3msec per guess.</li>
@@ -200,6 +188,7 @@
 <ul>
 <li>Avoid optimizing perplexity.</li>
 <li>Suitable for non-strictly probabilitic model, like stupid backoff.</li>
+<li><em>Accuracy for top 3 guesses ~25% which is suboptimal for users</em></li>
 </ul></li>
 </ul></article></slide>
 
